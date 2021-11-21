@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+body{
+    background: #1C2833;
+   /*  overflow: hidden; */
+    overflow: auto;
+}
+
+
+
+.gallery-container{
+    width: 90%;
+    margin: 100px auto;
+    height: 30%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 500px);
+    gap: 10px;
+}
+
+.gallery-container .gallery-card{
+    overflow: hidden;
+}
+
+.gallery-container .gallery-card a{
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-container .gallery-card a > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.gallery-container .gallery-card a > img:hover{
+    transform: scale(1.5) rotate(50deg);
+}
+
+.title{
+
+    text-align: center;
+    font-size: 90px;
+    font-weight: bold;
+    font-style: italic;
+    color: deeppink;
+    
+}
+
+.p{
+    font: bold 90% monospace;
+    font-size: 25px;
+    margin-top: 40px;
+    color: white;
+}
+
+.footer{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 60px;
+    color: dimgray;
+    font-weight: bolder;
+}
+
+
+@media screen and (max-width: 800px) {
+ 
+.gallery-container{
+    width: 90%;
+    margin: 100px auto;
+    height: 30%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 10px;
+}
+
+.gallery-container .gallery-card{
+    overflow: hidden;
+}
+
+.gallery-container .gallery-card a{
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-container .gallery-card a > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.gallery-container .gallery-card a > img:hover{
+    transform: scale(1.5) rotate(50deg);
+}
+
+.title{
+
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    color: deeppink;
+    
+}
+
+.p{
+    font: bold 90% monospace;
+    font-size: 15px;
+    margin-top: 40px;
+    color: white;
+}
+
+.footer{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 60px;
+    color: dimgray;
+    font-weight: bolder;
+}
+
+  }
+
+  
